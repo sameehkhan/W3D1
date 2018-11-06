@@ -109,7 +109,8 @@ def sparse_continents
   # population is less than 25,000,000. Show name, continent and
   # population.
   # Hint: Sometimes rewording the problem can help you see the solution.
-  execute(<<-SQL)explain analyze
+  execute(<<-SQL)
+  explain analyze
   SELECT
     name, continent, population
   FROM
@@ -122,6 +123,6 @@ def sparse_continents
     WHERE
       population > 25000000 
   )
-    
+
   SQL
 end
